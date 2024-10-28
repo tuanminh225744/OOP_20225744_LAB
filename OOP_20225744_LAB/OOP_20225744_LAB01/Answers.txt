@@ -1,0 +1,5 @@
+- What happens if users choose “Cancel”? 
+Nếu người dùng chọn "Cancel" trong hộp thoại xác nhận, biến option sẽ nhận giá trị JOptionPane.CANCEL_OPTION. Khi đó, trong câu lệnh hiển thị thông báo, đoạn mã sẽ không trả về "Yes" hay "No", mà sẽ mặc định là "No". Do đó, người dùng sẽ thấy thông báo là "Bạn đã chọn: No".
+
+- How to customize the options to users, e.g. only two options: “Yes” and “No”, OR “I do” and “I don’t”
+Để tùy chỉnh các tùy chọn cho người dùng trong JOptionPane, bạn có thể sử dụng phương thức showOptionDialog. Phương thức này cho phép bạn định nghĩa mảng các tùy chọn như “Có” và “Không” hoặc “Tôi đồng ý” và “Tôi không đồng ý”. Chỉ cần truyền mảng tùy chọn vào tham số của phương thức là bạn có thể hiển thị chúng trong hộp thoại xác nhận.
